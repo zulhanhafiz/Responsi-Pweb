@@ -1,0 +1,95 @@
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin: 12px 0 5px;
+    color: #333;
+    font-weight: 500;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    outline: none;
+  }
+
+  input:focus {
+    border-color: #4a90e2;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 6px;
+    transform: scale(1.2);
+  }
+
+  label[for="persetujuan"] {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .error {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #3b7dd8;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
